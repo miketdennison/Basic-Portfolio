@@ -6,26 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Michael Dennison</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>
-            Michael Dennison
-        </h1>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="header-width">
+            <h1 id="my-name">
+                Michael Dennison
+            </h1>
+            <nav class="clearfix">
+                <ul id="nav-bar">
+                    <li class="link"><a href="index.html">About</a></li>
+                    <li class="link"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="link"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div>
+
+    <div class="main-content container clearfix">
         <h2>Portfolio</h2>
         <hr>
-        Images of Portfolio.
+        <div class="portfolio-content">
+            <section>
+                <div class="image-label">Canyon</div>
+                <img class="portfolio-image" src="assets/images/canyon.jpg">
+            </section>
+
+            <section>
+                <div class="image-label">Gorge</div>
+                <img class="portfolio-image" src="assets/images/gorge.jpg">
+            </section>
+
+            <section>
+                <div class="image-label">Sleep</div>
+                <img class="portfolio-image" src="assets/images/lying.jpg">
+            </section>
+
+            <section>
+                <div class="image-label">Scarf</div>
+                <img class="portfolio-image" src="assets/images/scarf.jpg">
+            </section>
+
+            <section>
+                <div class=image-label>Northern</div>
+                <img class="portfolio-image" src="assets/images/northern.jpg">
+            </section>
+        </div>
     </div>
 </body>
 <footer>
+    <div class="blue-bar"></div>
     Copyright &copy;
 </footer>
 
