@@ -1,75 +1,94 @@
-body {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    background-image: url("../images/cheap_diagonal_fabric.png")
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
 
+#my-name {
+    padding: 5px 10px 5px 10px;    
+    float: left;
+}
+
+#nav-bar {
+    float: right;
+    margin-top: 0;
 }
 
 header {
-    clear: both;
     background-color: #ffffff;
-    border-color: #cccccc;
-    padding: 18px;
+    border: 2px solid #cccccc;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
     background-color: #4aaaa5;
     color: #ffffff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    margin: 0;
+    font-family: 'Georgia', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.header-width {
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav li {
     float: left;
+    list-style: none;
+    margin: 1px 10px;
+    padding-top: 10px;
 }
 
-h2 {
-    clear: both;
-    color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-}
-
-.content {
-    background-color: #ffffff;
-    border-color: #dddddd;
-    padding-bottom: 200px;
-    margin-bottom: 20px;
-}
-
-hr{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-li {
-    display: inline;
-    margin-right: 12px;
-}
-
-#links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: right;
-}
-a:link, a:visited {
+a:link {
     color: #777777;
     text-decoration: none;
 }
-#profile-picture {
-    width: 200px;
-    height: 200px;
-    margin: 12px;
-    float: left;
+
+a:visited {
+    color: #777777;
 }
 
-#blue-bar {
-    background-color: #4aaaa5;
-    padding: 2px;
+body {
+    background-image: url("../images/cheap_diagonal_fabric.png");
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 0;
+}
+
+hr {
+    padding: 0;
+    margin: 0 0 0 12;
+}
+#profile-photo {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+
+.main-content {
+    margin-top: 10px;
+    padding:0 10px;
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
 }
 
 footer {
-   clear: both;
-   background-color: #666666;
-   color: silver;
-   text-align: center;
+    margin-top: 10px;
+    background-color: #666666;
+    color: silver;
+    text-align: center;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
